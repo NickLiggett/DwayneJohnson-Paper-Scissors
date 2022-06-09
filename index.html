@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+    <body>
+      <section class="player-section" id="humanSection">
+        <img class="player-token" src="./assets/brain_token.png"></img>
+        <h2>Human</h2><h3>Wins: 0</h3>
+        <button id="changeGameButton">Change game</button>
+      </section>
+      <section class="battle-arena"><h1>Rock, Paper, Scissors</h1>
+        <h2>Choose your game!</h2><section class="button-section">
+          <button class="choose-game-buttons" id="classicButton">
+            <text>Classic</text><text>Rock > Scissors</text>
+            <text>Scissors > Paper</text><text>Paper > Rock</text></button>
+          <button class="choose-game-buttons" id="advancedButton">Advanced</button></section>
+      </section>
+      <section class="player-section" id="computerSection">
+        <img class="player-token" src="./assets/cpu_brain.png"></img>
+        <h2>Computer</h2><h3>Wins: 0</h3>
+      </section>
+      <script src="player.js"></script>
+      <script src="game.js"></script>
+      <script src="main.js"></script>
+    </body>
+    </html>
