@@ -6,10 +6,10 @@
     <body>
       <section class="player-section" id="humanSection">
         <img class="player-token" src="./assets/brain_token.png"></img>
-        <h2>Human</h2><h3>Wins: 0</h3>
+        <h2>Human</h2><h3 id="humanWins">Wins: 0</h3>
         <button id="changeGameButton">Change game</button>
       </section>
-      <section class="battle-arena"><h1>Rock, Paper, Scissors</h1>
+      <section class="choose-game-view"><h1>Rock, Paper, Scissors</h1>
         <h2>Choose your game!</h2><section class="button-section">
           <button class="choose-game-buttons" id="classicButton">
             <text>Classic</text><text>Rock > Scissors</text>
@@ -18,7 +18,7 @@
       </section>
       <section class="player-section" id="computerSection">
         <img class="player-token" src="./assets/cpu_brain.png"></img>
-        <h2>Computer</h2><h3>Wins: 0</h3>
+        <h2>Computer</h2><h3 id="cpuWins">Wins: 0</h3>
       </section>
       <script src="player.js"></script>
       <script src="game.js"></script>

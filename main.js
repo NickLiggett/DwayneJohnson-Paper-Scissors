@@ -1,13 +1,15 @@
-var classicButton = document.getElementById('classicButton')
-var battleArena = document.querySelector('.battle-arena')
+var classicButton = document.querySelector('#classicButton')
+var chooseGameView = document.querySelector('.choose-game-view')
 var fighterIcons = document.querySelectorAll('.fighter-icons')
 var results = document.querySelector('.player-vs-cpu')
 var playerResult = document.getElementById('playerResult')
 var cpuResult = document.getElementById('cpuResult')
 var humanSection = document.getElementById('changeGameButton')
+var humanWins = document.getElementById('humanWins')
+var cpuWins = document.getElementById('cpuWins')
 
 classicButton.addEventListener('click', playClassicMode)
-battleArena.addEventListener('click', function(event) {
+chooseGameView.addEventListener('click', function(event) {
   fight(event)
 })
 humanSection.addEventListener('click', function(event) {
@@ -15,17 +17,27 @@ humanSection.addEventListener('click', function(event) {
 })
 
 var game = new Game()
-var player = new Player()
+var humanPlayer = new Player()
+var cpuPlayer = new Player()
 var rockIcon = 'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/rock.png'
 var paperIcon = 'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/post-it.png'
 var scissorIcon = 'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/scissors.png'
-
 var options = [rockIcon, paperIcon, scissorIcon]
 
+function showHome(event) {
+    chooseGameView.innerHTML =
+    `<h1>Rock, Paper, Scissors</h1>
+      <h2>Choose your game!</h2><section class="button-section">
+        <button class="choose-game-buttons" id="classicButton">
+          <text>Classic</text><text>Rock > Scissors</text>
+          <text>Scissors > Paper</text><text>Paper > Rock</text></button>
+        <button class="choose-game-buttons" id="advancedButton">Advanced</button></section>`
+        var classicButton = document.querySelector('#classicButton')
+        classicButton.addEventListener('click', playClassicMode)
+}
 
-
-function timeout() {
-  battleArena.innerHTML =
+function playClassicMode() {
+  chooseGameView.innerHTML =
   `<h1>Rock, Paper, Scissors</h1>
   <h2>Choose your fighter!</h2>
   <section class="fighters">
@@ -35,18 +47,8 @@ function timeout() {
   </section>`
 }
 
-function showHome(event) {
-    battleArena.innerHTML =
-    `<h1>Rock, Paper, Scissors</h1>
-      <h2>Choose your game!</h2><section class="button-section">
-        <button class="choose-game-buttons" id="classicButton">
-          <text>Classic</text><text>Rock > Scissors</text>
-          <text>Scissors > Paper</text><text>Paper > Rock</text></button>
-        <button class="choose-game-buttons" id="advancedButton">Advanced</button></section>`
-}
-
-function playClassicMode() {
-  battleArena.innerHTML =
+function timeout() {
+  chooseGameView.innerHTML =
   `<h1>Rock, Paper, Scissors</h1>
   <h2>Choose your fighter!</h2>
   <section class="fighters">
@@ -57,18 +59,14 @@ function playClassicMode() {
 }
 
 function fight(event) {
-  console.log(event.target.id)
   var choice = event.target.src
+  var rand = Math.floor(Math.random() * 3)
   if (event.target.classList.contains('fighter-icons')) {
-  battleArena.innerHTML = `<h1>Rock, Paper, Scissors</h1><h2>Oof.. try again!</h2>
+  chooseGameView.innerHTML = `<h1>Rock, Paper, Scissors</h1><h2>Oof.. try again!</h2>
   <section class="player-vs-cpu"><img class="result" id="playerResult" src=${choice}>
-  </img><img class="result" id="cpuResult" src=${options[randomNum()]}></img></section>`
+  </img><img class="result" id="cpuResult" src=${options[rand]}></img></section>`
   game.checkForDraw()
   game.checkForWin()
   window.setTimeout(timeout, 1000)
 }
-}
-
-function randomNum() {
-  return Math.floor(Math.random() * 3)
 }
