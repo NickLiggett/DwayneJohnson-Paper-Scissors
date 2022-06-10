@@ -6,43 +6,62 @@ html {
 body {
   display: flex;
   justify-content: center;
-  background-color: white;
-  width: 99%;
-  height: 98%;
-  border-style: solid;
+  width: 100%;
+  height: 100%;
+  margin: 0%
 }
 
 section {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 400%;
   color: white;
 }
 
 h2 {
-  font-size: 30px;
-  margin-top: 0px;
+  font-size: 200%;
+  margin-top: 5%;
   color: white;
 }
 
 h3 {
   color: white;
+  margin-top: 15%;
+}
+
+button {
+  cursor: pointer;
 }
 
 .player-token {
-  margin-top: 50px;
-  height: 80px;
-  width: 80px;
+  width: 100px;
+  height: 100px;
+  margin-top: 20%;
 }
 
  .player-section {
    width: 20%;
    height: 100%;
    background-color: #8800C7;
+ }
+
+ .change-game-button {
+   width: 130px;
+   height: 70px;
+   margin-top: 120px;
+   font-size: 150%;
+   background-color: purple;
+   color: white;
+   border-radius: 12%
+ }
+
+ .change-game-button:hover {
+   background-color: #A44CD3;
+   color: purple;
  }
 
  .choose-game-view {
@@ -53,9 +72,8 @@ h3 {
 
  .button-section {
    justify-content: space-evenly;
-   height: 600px;
-   width: 300px;
-   margin-top: 20px;
+   width: 25%;
+   height: 50%;
  }
 
  .choose-game-buttons {
@@ -63,8 +81,14 @@ h3 {
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
-   height: 40%;
    width: 100%;
+   height: 40%;
+   background-color: #8800C7;
+   color: white;
+   border-radius: 10%;
+ }
+
+ .choose-game-buttons:hover {
    background-color: purple;
    color: white;
  }
@@ -78,9 +102,27 @@ h3 {
    margin-top: 10%;
  }
 
+ .advanced-fighters {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 680px;
+   height: 50%;
+ }
+
  .fighter-icons {
-   height: 100px;
-   width: 100px;
+   width: 180px;
+   height: 180px;
+   margin: 3%;
+   cursor: pointer;
+ }
+
+ .advanced-fighter-icons {
+   width: 180px;
+   height: 200px;
+   margin: 3%;
+   cursor: pointer;
  }
 
  .player-vs-cpu {
@@ -90,6 +132,6 @@ h3 {
  }
 
  .result {
-   height: 100px;
-   width: 100px;
+   width: 200px;
+   height: 200px;
  }
