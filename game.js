@@ -55,6 +55,6 @@ class Game {
     }
   }
   resetBoard(mode) {
-    window.setTimeout(mode, 2000)
+    window.setTimeout(mode, 1000)
   }
 }
