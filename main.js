@@ -21,14 +21,8 @@ humanSection.addEventListener('click', function(event) {
   showHome(event)
 })
 
-var game = new Game()
-var humanPlayer = new Player('Tim', './assets/brain_token.png')
-var cpuPlayer = new Player('Computron', './assets/cpu_brain.png')
-var icons = ['file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/the-rock.png',
- 'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/post-it.png',
-  'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/scissors.png',
-   'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/iguana.png',
-    'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/flat-alien.png']
+var game = new Game([humanPlayer, cpuPlayer])
+
 
 humanName.innerText = humanPlayer.name
 humanToken.src = humanPlayer.token
