@@ -31,12 +31,24 @@ cpuToken.src = cpuPlayer.token
 function showHome(event) {
   changeGameButton.classList.add('hidden')
   chooseGameView.innerHTML =
-    `<h1>The Rock, Paper, Scissors</h1>
-      <h2>Choose your game!</h2><section class="button-section">
-        <button class="choose-game-buttons" id="classicButton">
-          <article>Classic</article><article>The Rock > Scissors</article>
-          <article>Scissors > Paper</article><article>Paper > The Rock</article></button>
-        <button class="choose-game-buttons" id="advancedButton">Advanced</button></section>`
+    `    <h1>The Rock, Paper, Scissors</h1>
+        <h2>Choose your game!</h2>
+        <section class="button-section">
+          <button class="choose-game-buttons" id="classicButton">
+            <article class="mode-title">Classic</article>
+            <article>The Rock > Scissors</article>
+            <article>Paper > The Rock</article>
+            <article>Scissors > Paper</article>
+          </button>
+          <button class="choose-game-buttons" id="advancedButton">
+            <article class="mode-title">Advanced</article>
+            <article>The Rock > Scissors & Lizard</article>
+            <article>Paper > The Rock & Alien</article>
+            <article>Scissors > Paper & Lizard</article>
+            <article>Lizard > Paper & Alien</article>
+            <article>Alien > The Rock & Scissors</article>
+          </button>
+        </section>`
   var classicButton = document.getElementById('classicButton')
   var advancedButton = document.getElementById('advancedButton')
   classicButton.addEventListener('click', playClassicMode)

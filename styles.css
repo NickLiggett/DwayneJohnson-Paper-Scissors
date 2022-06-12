@@ -9,7 +9,11 @@ body {
   width: 100%;
   height: 100%;
   margin: 0%;
-  font-family: Comic Sans MS;
+  font-family: AmazDooMLeft;
+  background-image: url("assets/Netherrealm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
@@ -19,53 +23,62 @@ section {
 }
 
 h1 {
-  font-size: 400%;
-  color: white;
+  font-size: 500%;
+  margin-bottom: 0%;
+  color: #e7000c;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 400%;
   margin-top: 0%;
-  color: white;
+  margin-bottom: 0%;
+  color: #e7000c;
 }
 
 h3 {
-  margin-top: 15%;
-  color: white;
+  font-size: 300%;
+  margin-top: 0%;
+  color: #e7000c;
 }
 
 button {
   cursor: pointer;
+  background-color: #3f4244;
+  color: #e7000c;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #e7000c;
+  color: #3f4244;
 }
 
 .player-token {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-top: 20%;
 }
 
 .player-section {
   width: 20%;
   height: 100%;
-  background-color: #8800C7;
 }
 
 .change-game-button {
-  width: 130px;
-  height: 70px;
-  margin-top: 40px;
-  background-color: purple;
-  color: white;
-  font-size: 150%;
-  border-radius: 12%
+  width: 120px;
+  height: 100px;
+  margin-top: 0%;
+  font-size: 225%;
+  border-radius: 5%
 }
 
-.change-game-button:hover {
-  background-color: #A44CD3;
-  color: purple;
+.change-game-button-text {
+  margin: 5%;
+  margin-top: 10%
 }
 
 .mode-title {
+  margin-top: 5%;
   margin-bottom: 3%;
   font-size: 130%;
 }
@@ -73,13 +86,12 @@ button {
 .choose-game-view {
   width: 60%;
   height: 100%;
-  background-color: #A44CD3;
 }
 
 .button-section {
   justify-content: space-evenly;
-  width: 30%;
-  height: 60%;
+  width: 35%;
+  height: 65%;
 }
 
 .choose-game-buttons {
@@ -88,26 +100,20 @@ button {
   justify-content: space-evenly;
   align-items: center;
   font-family: inherit;
-  font-size: 100%;
+  font-size: 180%;
   width: 100%;
-  height: 45%;
-  background-color: #8800C7;
-  color: white;
+  height: 60%;
+  margin: 10%;
   border-radius: 5%;
-}
-
-.choose-game-buttons:hover {
-  background-color: purple;
-  color: white;
 }
 
 .fighters {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 90%;
-  height: 20%;
-  margin-top: 10%;
+  width: 850px;
+  height: 200px;
+  margin-top: 15%;
 }
 
 .advanced-fighters {
@@ -115,20 +121,21 @@ button {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 680px;
-  height: 50%;
+  width: 900px;
+  height: 600px;
+  margin-top: 0%;
 }
 
 .fighter-icons {
-  width: 170px;
-  height: 180px;
+  width: 300px;
+  height: 250px;
   margin: 3%;
   cursor: pointer;
 }
 
 .advanced-fighter-icons {
-  width: 170px;
-  height: 180px;
+  width: 225px;
+  height: 220px;
   margin: 3%;
   cursor: pointer;
 }
