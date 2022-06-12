@@ -23,29 +23,30 @@ humanSection.addEventListener('click', function(event) {
 
 var game = new Game([humanPlayer, cpuPlayer])
 
-
 humanName.innerText = humanPlayer.name
 humanToken.src = humanPlayer.token
 cpuName.innerText = cpuPlayer.name
 cpuToken.src = cpuPlayer.token
 
 function showHome(event) {
-    chooseGameView.innerHTML =
+  changeGameButton.classList.add('hidden')
+  chooseGameView.innerHTML =
     `<h1>The Rock, Paper, Scissors</h1>
       <h2>Choose your game!</h2><section class="button-section">
         <button class="choose-game-buttons" id="classicButton">
           <article>Classic</article><article>The Rock > Scissors</article>
           <article>Scissors > Paper</article><article>Paper > The Rock</article></button>
         <button class="choose-game-buttons" id="advancedButton">Advanced</button></section>`
-        var classicButton = document.getElementById('classicButton')
-        var advancedButton = document.getElementById('advancedButton')
-        classicButton.addEventListener('click', playClassicMode)
-        advancedButton.addEventListener('click', playAdvancedMode)
+  var classicButton = document.getElementById('classicButton')
+  var advancedButton = document.getElementById('advancedButton')
+  classicButton.addEventListener('click', playClassicMode)
+  advancedButton.addEventListener('click', playAdvancedMode)
 }
 
 function playClassicMode() {
+  changeGameButton.classList.remove('hidden')
   chooseGameView.innerHTML =
-  `<h1>The Rock, Paper, Scissors</h1>
+    `<h1>The Rock, Paper, Scissors</h1>
   <h2>Choose your fighter!</h2>
   <section class="fighters">
     <img class="fighter-icons" id="rock" src="./assets/the-rock.png"></img>
@@ -55,8 +56,9 @@ function playClassicMode() {
 }
 
 function playAdvancedMode() {
+  changeGameButton.classList.remove('hidden')
   chooseGameView.innerHTML =
-  `<h1>The Rock, Paper, Scissors</h1>
+    `<h1>The Rock, Paper, Scissors</h1>
   <h2>Choose your fighter!</h2>
   <section class="advanced-fighters">
     <img class="advanced-fighter-icons" id="rock" src="./assets/the-rock.png"></img>

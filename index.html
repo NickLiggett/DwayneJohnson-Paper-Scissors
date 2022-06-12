@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-    <body>
-      <section class="player-section" id="humanSection">
-        <img class="player-token" id="humanToken" src="./assets/brain_token.png">
-        <h2 id="humanName">Human</h2><h3 id="humanWins">Wins: 0</h3>
-        <button class="change-game-button" id="changeGameButton">Change Game</button>
-      </section>
-      <section class="choose-game-view"><h1>The Rock, Paper, Scissors</h1>
-        <h2>Choose your game!</h2><section class="button-section">
-          <button class="choose-game-buttons" id="classicButton">
-            <article>Classic</article><article>The Rock > Scissors</article>
-            <article>Scissors > Paper</article><article>Paper > The Rock</article></button>
-          <button class="choose-game-buttons" id="advancedButton">Advanced</button></section>
-      </section>
-      <section class="player-section" id="computerSection">
-        <img class="player-token" id="cpuToken" src="./assets/cpu_brain.png">
-        <h2 id="cpuName">Computer</h2><h3 id="cpuWins">Wins: 0</h3>
-      </section>
-      <script src="player.js"></script>
-      <script src="game.js"></script>
-      <script src="main.js"></script>
-    </body>
-    </html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section class="player-section" id="humanSection">
+    <img class="player-token" id="humanToken" src="./assets/brain_token.png">
+    <h2 id="humanName">Human</h2>
+    <h3 id="humanWins">Wins: 0</h3>
+    <button class="change-game-button hidden" id="changeGameButton">Change Game</button>
+  </section>
+  <section class="choose-game-view">
+    <h1>The Rock, Paper, Scissors</h1>
+    <h2>Choose your game!</h2>
+    <section class="button-section">
+      <button class="choose-game-buttons" id="classicButton">
+        <article class="mode-title">Classic</article>
+        <article>The Rock > Scissors</article>
+        <article>Paper > The Rock</article>
+        <article>Scissors > Paper</article>
+      </button>
+      <button class="choose-game-buttons" id="advancedButton">
+        <article class="mode-title">Advanced</article>
+        <article>The Rock > Scissors & Lizard</article>
+        <article>Paper > The Rock & Alien</article>
+        <article>Scissors > Paper & Lizard</article>
+        <article>Lizard > Paper & Alien</article>
+        <article></article>
+      </button>
+    </section>
+  </section>
+  <section class="player-section" id="computerSection">
+    <img class="player-token" id="cpuToken" src="./assets/cpu_brain.png">
+    <h2 id="cpuName">Computer</h2>
+    <h3 id="cpuWins">Wins: 0</h3>
+  </section>
+  <script src="player.js"></script>
+  <script src="game.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
