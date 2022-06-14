@@ -49,6 +49,24 @@ class Game {
     }
   }
 
+  playAudio(sound) {
+  muteButton.classList.remove('hidden')
+  var sound = document.getElementById(sound)
+  sound.play()
+}
+
+toggleMute() {
+  if (song.muted === true && fightSound.muted === true) {
+    song.muted = false
+    fightSound.muted = false
+    muteButton.innerText = "mute"
+    return
+  }
+  song.muted = true
+  fightSound.muted = true
+  muteButton.innerText = "unmute"
+}
+
   resetBoard(mode) {
     window.setTimeout(mode, 2000)
   }

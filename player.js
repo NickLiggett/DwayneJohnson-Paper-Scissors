@@ -12,6 +12,7 @@ class Player {
     <section class="player-vs-cpu"><img class="result" id="playerResult" src=${choice}>
     </img><img class="result" id="cpuResult" src=${icons[rand]}></img></section>`
       game.checkForWin()
+      game.playAudio("sound1")
       game.resetBoard(playClassicMode)
     } else if (event.target.classList.contains('advanced-fighter-icons')) {
       var rand = Math.floor(Math.random() * 5)
@@ -19,6 +20,7 @@ class Player {
     <section class="player-vs-cpu"><img class="result" id="playerResult" src=${choice}>
     </img><img class="result" id="cpuResult" src=${icons[rand]}></img></section>`
       game.checkForWin()
+      game.playAudio("sound1")
       game.resetBoard(playAdvancedMode)
     }
   }

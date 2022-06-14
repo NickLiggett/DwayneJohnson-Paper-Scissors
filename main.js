@@ -1,6 +1,9 @@
 var classicButton = document.getElementById('classicButton')
 var advancedButton = document.getElementById('advancedButton')
 var chooseGameView = document.querySelector('.choose-game-view')
+var muteButton = document.querySelector('.mute-button')
+var song = document.getElementById('song')
+var fightSound = document.getElementById('sound1')
 var fighterIcons = document.querySelectorAll('.fighter-icons')
 var results = document.querySelector('.player-vs-cpu')
 var playerResult = document.getElementById('playerResult')
@@ -12,8 +15,12 @@ var humanSection = document.getElementById('changeGameButton')
 var humanWins = document.getElementById('humanWins')
 var humanName = document.getElementById('humanName')
 
+
 classicButton.addEventListener('click', playClassicMode)
 advancedButton.addEventListener('click', playAdvancedMode)
+muteButton.addEventListener('click', function() {
+  game.toggleMute()
+})
 chooseGameView.addEventListener('click', function(event) {
   humanPlayer.takeTurn(event)
 })
@@ -27,6 +34,7 @@ humanName.innerText = humanPlayer.name
 humanToken.src = humanPlayer.token
 cpuName.innerText = cpuPlayer.name
 cpuToken.src = cpuPlayer.token
+
 
 function showHome(event) {
   changeGameButton.classList.add('hidden')
@@ -56,6 +64,7 @@ function showHome(event) {
 }
 
 function playClassicMode() {
+  game.playAudio("song")
   changeGameButton.classList.remove('hidden')
   chooseGameView.innerHTML =
     `<h1>The Rock, Paper, Scissors</h1>
@@ -68,6 +77,7 @@ function playClassicMode() {
 }
 
 function playAdvancedMode() {
+  game.playAudio("song")
   changeGameButton.classList.remove('hidden')
   chooseGameView.innerHTML =
     `<h1>The Rock, Paper, Scissors</h1>
