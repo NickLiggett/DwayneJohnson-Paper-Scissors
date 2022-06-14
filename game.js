@@ -2,8 +2,8 @@
 var humanPlayer = new Player('Ash', './assets/brain_token.png')
 var cpuPlayer = new Player('Computron', './assets/cpu_brain.png')
 
-var icons = ['./assets/the-rock.png', './assets/post-it.png',
-  './assets/scissors.png', './assets/iguana.png', './assets/flat-alien.png'
+var icons = ['file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/the-rock.png', 'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/post-it.png',
+  'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/scissors.png', 'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/iguana.png', 'file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/flat-alien.png'
 ]
 
 class Game {
@@ -44,7 +44,8 @@ class Game {
     } else {
       chooseGameView.childNodes[1].innerText = "SUDDEN DEATH"
     }
-  }
+  }   // Thought of possibly using a switch statement above, but
+      // no time to attempt. Would it even be "better"?
 
   playAudio(sound) {
   muteButton.classList.remove('hidden')

@@ -16,7 +16,6 @@ var humanSection = document.getElementById('changeGameButton')
 var humanWins = document.getElementById('humanWins')
 var humanName = document.getElementById('humanName')
 
-
 classicButton.addEventListener('click', playClassicMode)
 advancedButton.addEventListener('click', playAdvancedMode)
 muteButton.addEventListener('click', function() {
@@ -35,7 +34,6 @@ humanName.innerText = humanPlayer.name
 humanToken.src = humanPlayer.token
 cpuName.innerText = cpuPlayer.name
 cpuToken.src = cpuPlayer.token
-
 
 function showHome(event) {
   game.playAudio("sound2")
@@ -63,6 +61,9 @@ function showHome(event) {
   var advancedButton = document.getElementById('advancedButton')
   classicButton.addEventListener('click', playClassicMode)
   advancedButton.addEventListener('click', playAdvancedMode)
+   // Had to reintroduce querySelectors and eventListeners here.
+   // I assume it's because even though the HTML consists of the same characters
+   // it is still technically different HTML...? There must be a DRYer way to do this.
 }
 
 function playClassicMode() {
