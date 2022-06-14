@@ -56,15 +56,19 @@ class Game {
 }
 
   toggleMute() {
-    if (song.muted === true && fightSound.muted === true) {
-      game.playAudio("sound2")
-      song.muted = false
-      fightSound.muted = false
-      muteButton.innerText = "mute"
-      return
+    if (song.muted === true &&
+        fightSound.muted === true &&
+        bleep.muted === true) {
+          game.playAudio("sound2")
+          song.muted = false
+          fightSound.muted = false
+          bleep.muted = false
+          muteButton.innerText = "mute"
+          return
   }
     song.muted = true
     fightSound.muted = true
+    bleep.muted = true
     muteButton.innerText = "unmute"
 }
 
