@@ -55,19 +55,20 @@ class Game {
   sound.play()
 }
 
-toggleMute() {
-  if (song.muted === true && fightSound.muted === true) {
-    song.muted = false
-    fightSound.muted = false
-    muteButton.innerText = "mute"
-    return
+  toggleMute() {
+    if (song.muted === true && fightSound.muted === true) {
+      game.playAudio("sound2")
+      song.muted = false
+      fightSound.muted = false
+      muteButton.innerText = "mute"
+      return
   }
-  song.muted = true
-  fightSound.muted = true
-  muteButton.innerText = "unmute"
+    song.muted = true
+    fightSound.muted = true
+    muteButton.innerText = "unmute"
 }
 
   resetBoard(mode) {
-    window.setTimeout(mode, 2000)
+    window.setTimeout(mode, 1900)
   }
 }

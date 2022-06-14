@@ -10,6 +10,7 @@ body {
   height: 100%;
   margin: 0%;
   font-family: AmazDooMLeft;
+  -webkit-text-stroke: 1px black;
   background-image: url("assets/Netherrealm.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -166,8 +167,8 @@ button:hover {
 }
 
 .result {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 325px;
 }
 
 .hidden {

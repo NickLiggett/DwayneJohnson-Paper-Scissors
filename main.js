@@ -37,6 +37,7 @@ cpuToken.src = cpuPlayer.token
 
 
 function showHome(event) {
+  game.playAudio("sound2")
   changeGameButton.classList.add('hidden')
   chooseGameView.innerHTML =
     `    <h1>The Rock, Paper, Scissors</h1>
@@ -64,6 +65,7 @@ function showHome(event) {
 }
 
 function playClassicMode() {
+  game.playAudio("sound2")
   game.playAudio("song")
   changeGameButton.classList.remove('hidden')
   chooseGameView.innerHTML =
@@ -77,6 +79,7 @@ function playClassicMode() {
 }
 
 function playAdvancedMode() {
+  game.playAudio("sound2")
   game.playAudio("song")
   changeGameButton.classList.remove('hidden')
   chooseGameView.innerHTML =
