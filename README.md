@@ -13,9 +13,9 @@ When a user clicks on the mode they wish to play (Classic or Advanced), the page
 
  ![Home Page](./assets/Home-View.png)
 
- ![Classic Mode](file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/Classic-Mode.png)
+ ![Classic Mode](./assets/Classic-Mode.png)
 
- ![Advanced Mode](file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/Advanced-Mode.png)
+ ![Advanced Mode](./assets/Advanced-Mode.png)
 
 
 ## Contributors
