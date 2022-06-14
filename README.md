@@ -11,7 +11,7 @@ Visit the published The Rock, Paper, Scissors [site!]()
 ## Features
 When a user clicks on the mode they wish to play (Classic or Advanced), the page starts to play a battle song for the user's enjoyment (for which there is a mute button) and populates a number of fighter icons respective to the mode selected. The win conditions are stated on the mode selection buttons. A tally of wins is kept for each player and those wins remain until the page is refreshed. "Flawless Victory" means you won the round, "You Die" means you lost, and "Sudden Death" means there was a draw.
 
- ![Home Page](file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/Home-View.png)
+ ![Home Page](./assets/Home-View.png)
 
  ![Classic Mode](file:///Users/nick/DwayneJohnson-Paper-Scissors/assets/Classic-Mode.png)
 
