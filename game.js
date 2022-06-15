@@ -2,11 +2,11 @@
 var humanPlayer = new Player('Ash', './assets/brain_token.png')
 var cpuPlayer = new Player('Computron', './assets/cpu_brain.png')
 
-var icons = ['./assets/the-rock.png',
- './assets/post-it.png',
-  './assets/scissors.png',
-   './assets/iguana.png',
-    './assets/flat-alien.png'
+var icons = ['https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/the-rock.png',
+ 'https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/post-it.png',
+  'https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/scissors.png',
+   'https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/iguana.png',
+    'https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/flat-alien.png'
 ]
 
 class Game {
@@ -74,6 +74,6 @@ class Game {
 }
 
   resetBoard(mode) {
-    // window.setTimeout(mode, 1900)
+    window.setTimeout(mode, 1900)
   }
 }

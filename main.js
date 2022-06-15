@@ -74,9 +74,9 @@ function playClassicMode() {
     `<h1>The Rock, Paper, Scissors</h1>
   <h2>Choose your fighter!</h2>
   <section class="fighters">
-    <img class="fighter-icons" id="rock" src="./assets/the-rock.png"></img>
-    <img class="fighter-icons" id="paper" src="./assets/post-it.png"></img>
-    <img class="fighter-icons" id="scissors" src="./assets/scissors.png"></img>
+    <img class="fighter-icons" id="rock" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/the-rock.png"></img>
+    <img class="fighter-icons" id="paper" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/post-it.png"></img>
+    <img class="fighter-icons" id="scissors" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/scissors.png"></img>
   </section>`
 }
 
@@ -88,10 +88,10 @@ function playAdvancedMode() {
     `<h1>The Rock, Paper, Scissors</h1>
   <h2>Choose your fighter!</h2>
   <section class="advanced-fighters">
-    <img class="advanced-fighter-icons" id="rock" src="./assets/the-rock.png"></img>
-    <img class="advanced-fighter-icons" id="paper" src="./assets/post-it.png"></img>
-    <img class="advanced-fighter-icons" id="scissors" src="./assets/scissors.png"></img>
-    <img class="advanced-fighter-icons" id="lizard" src="./assets/iguana.png"></img>
-    <img class="advanced-fighter-icons" id="alien" src="./assets/flat-alien.png"></img>
+    <img class="advanced-fighter-icons" id="rock" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/the-rock.png"></img>
+    <img class="advanced-fighter-icons" id="paper" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/post-it.png"></img>
+    <img class="advanced-fighter-icons" id="scissors" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/scissors.png"></img>
+    <img class="advanced-fighter-icons" id="lizard" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/iguana.png"></img>
+    <img class="advanced-fighter-icons" id="alien" src="https://nickliggett.github.io/DwayneJohnson-Paper-Scissors/assets/flat-alien.png"></img>
   </section>`
 }
