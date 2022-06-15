@@ -9,22 +9,12 @@ body {
   width: 100%;
   height: 100%;
   margin: 0%;
-  font-family: Courier;  /* Incase deployment breaks font */
-  font-family: AmazDooMLeft;
+  font-family: 'Permanent Marker';
   -webkit-text-stroke: 1px black;
   background-image: url("assets/Netherrealm.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@font-face {
-    font-family: 'amazdoomleftregular';
-    src: url('https://NickLiggett.github.io/DwayneJohnson-Paper-Scissors/assets/amazdoomleft_copy-webfont.woff2') format('woff2'),
-         url('https://NickLiggett.github.io/DwayneJohnson-Paper-Scissors/assets/amazdoomleft_copy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 section {
@@ -34,20 +24,23 @@ section {
 }
 
 h1 {
-  font-size: 500%;
+  text-align: center;
+  font-size: 450%;
+  margin-top: 0%;
   margin-bottom: 0%;
   color: #e7000c;
+  width: 120%;
 }
 
 h2 {
-  font-size: 400%;
+  font-size: 280%;
   margin-top: 0%;
   margin-bottom: 0%;
   color: #e7000c;
 }
 
 h3 {
-  font-size: 300%;
+  font-size: 200%;
   margin-top: 0%;
   color: #e7000c;
 }
@@ -83,8 +76,8 @@ button:hover {
 .mute-button {
   width: 100px;
   height: 40px;
-  font-size: 40px;
-  margin-top: 110%;
+  font-size: 24px;
+  margin-top: 120%;
   margin-left: 50%;
 }
 
@@ -95,21 +88,21 @@ button:hover {
 
 .change-game-button {
   width: 120px;
-  height: 100px;
+  height: 80px;
   margin-top: 0%;
-  font-size: 225%;
+  font-size: 170%;
   border-radius: 5%
 }
 
 .change-game-button-text {
-  margin: 5%;
-  margin-top: 10%
+  margin: 0%;
+  margin-top: -5%
 }
 
 .mode-title {
-  margin-top: 5%;
-  margin-bottom: 3%;
-  font-size: 130%;
+  margin-top: -5%;
+  margin-bottom: 0%;
+  font-size: 170%;
 }
 
 .choose-game-view {
@@ -120,7 +113,7 @@ button:hover {
 .button-section {
   justify-content: space-evenly;
   width: 35%;
-  height: 65%;
+  height: 80%;
 }
 
 .choose-game-buttons {
@@ -129,7 +122,7 @@ button:hover {
   justify-content: space-evenly;
   align-items: center;
   font-family: inherit;
-  font-size: 180%;
+  font-size: 120%;
   width: 100%;
   height: 60%;
   margin: 10%;
